@@ -1,0 +1,74 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 125%;
+}
+h1,h2{
+	font-size: 175%;
+}
+
+
+
+
+.block > div{
+	border: 1px solid black;
+	background: gray;
+	margin: 15px 15px;
+	position: relative;
+}
+
+.section-title{
+	text-align: center;
+	width: 200px;
+	border: 1px solid black;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.section-title h2{
+	margin: 0;
+}
+.box-1 .section-title{
+	background-color: orange;
+}
+.box-2 .section-title{
+	background-color: pink;
+}
+.box-3 .section-title{
+	background-color: lightblue;
+}
+.main_title{
+	text-align: center;
+	margin-bottom: 50px;
+}
+p{
+	padding: 45px 20px 0px 20px;
+}
+
+
+
+/*desctop*/
+@media (min-width: 992px){
+	.boxes .block{
+	float: left;
+	width: 33.33%;
+}
+}
+		
+/*Tabler*/
+@media (min-width: 768px) and (max-width: 991px){
+	.boxes .block{
+		float: left;
+		width: 50%;
+	}
+	.block:nth-child(3){
+		width: 100%;
+	}
+}
+
+/*mobile*/
+@media (max-width: 767px){
+
+}
